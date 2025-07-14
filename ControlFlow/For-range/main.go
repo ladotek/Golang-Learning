@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	//for range loop
+	// for range loop
 	// data structures - slice
 	xi := []int{42, 43, 44, 45, 46, 47}
 	for i, v := range xi {
