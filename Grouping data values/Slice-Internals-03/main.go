@@ -16,7 +16,7 @@ func main() {
 	fmt.Println("After medianTwo", y)
 }
 
-//User the same underlying array
+//Use the same underlying array
 //Everything is pass by value in go
 //The value is being passed into this func
 //And then assigned to x
