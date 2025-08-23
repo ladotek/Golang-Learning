@@ -29,7 +29,7 @@ func main() {
 		age:   27,
 	}
 
-	fmt.Printf("%T \n", p1)
-	fmt.Printf("%T \n", p2)
+	fmt.Printf("%T\t , %v \n", p1, p1)
+	fmt.Printf("%T\t , %v \n", p2, p2)
 
 }

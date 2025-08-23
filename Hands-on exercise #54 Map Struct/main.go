@@ -23,12 +23,12 @@ func main() {
 	}
 
 	m := map[string]person{
-		p1.last: p1,
+		p1.last: p1, //Key is "Bond" of type string, value is the full person struct for James
 		p2.last: p2,
 	}
 
 	for _, v := range m {
-		fmt.Println(v)
+		fmt.Println(v) // This will print out the entire map!
 		for _, v2 := range v.favIC {
 			fmt.Println(v.first, v.last, v2)
 		}
