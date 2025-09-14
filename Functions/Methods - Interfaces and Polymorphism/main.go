@@ -19,7 +19,7 @@ func (sa secretAgent) speak() {
 	fmt.Println("I am a secret agent", sa.first)
 }
 
-type human interface {
+type human interface { // the human interface has 1 method - speak
 	speak() // any type that has this method (types: secretAgent and person), is also of this type (human)!
 }
 
