@@ -10,18 +10,22 @@ func addF(a, b float64) float64 {
 	return a + b
 }
 
-type myNumbers interface { // The myNumbers interface takes in any int or float64
-	int | float64
+type myNumbers interface { // Have to include ~ here in order for it to work"
+	~int | ~float64
 }
 
-func addT[T myNumbers](a, b T) T { // input interface - to replace types [int | float64]
+func addT[T myNumbers](a, b T) T {
 	return a + b
 }
 
+type myAlias int
+
 func main() {
+	var n myAlias = 42
+
 	fmt.Println(addI(1, 2))
 	fmt.Println(addF(1.2, 2.2))
 
-	fmt.Println(addT(1, 2))
+	fmt.Println(addT(n, 2)) //Replace number with "n" here
 	fmt.Println(addT(1.2, 2.2))
 }
